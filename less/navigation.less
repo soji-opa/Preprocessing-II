@@ -1,1 +1,65 @@
 // Navigation Styles here
+
+
+header{
+    width: 100%;
+   
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media @mobile{
+            flex-direction: column;
+        }
+    }
+    h2{
+        display: table-cell;
+        width:30%;
+        font-size: 4rem;
+        padding-top: 4px;
+        // vertical-align: middle;
+        @media @mobile{
+            width: 100%;
+            text-align: center;
+            margin: 2% 0;
+        }
+    }
+
+    .link{
+        width:60%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40%;
+        
+        @media @mobile{
+            width: 100%;
+            margin-left: 0%;
+            justify-content: space-around;
+        }
+
+        a{
+          font-size: 1.4rem;
+          text-decoration: none; 
+          color: @black-color ;
+          font-weight: bold;
+
+          &:hover{
+              color: @hover-color;
+          }
+        //   &:visited{
+        //       color: @visit-color
+        //   }
+        }
+    }
+
+    hr{
+        border: 0;
+        border-top: 2px dashed  @navigation-border;
+        width: 120%;
+        margin-left: -70px ;
+        margin-bottom: 0;
+    }
+
+}
