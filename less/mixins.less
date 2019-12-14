@@ -1,11 +1,11 @@
 // Mixins in here
-.custom-btn(@btn-bgcolor, @size, @btn-color ){
+.custom-btn(@btn-bgcolor, @size, @btn-color, @lenght:45px ){
     display: table-cell;
     cursor: pointer;
     background-color: @btn-bgcolor;
     width: @size;
     margin: 0 0px 20px;
-    height: 45px;
+    height: @lenght;
     font-size: 2rem;
     color: @btn-color;
     border-radius: 10px;
